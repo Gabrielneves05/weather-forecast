@@ -7,6 +7,7 @@ function WeatherInfo({ weather }) {
             <div className="weather-info">
                 <img 
                     src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} 
+                    alt="Clima"
                 />
                 <p className="temperature">{Math.round(weather.main.temp)}&#176;C</p>
             </div>
